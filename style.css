@@ -1,0 +1,47 @@
+body{
+    background: plum;
+}
+
+.outer-container{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.hex-colors{
+
+    text-align: center;
+}
+h1{
+    margin-top:10%;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h2{
+    margin-top: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes changeColor {
+    0%   {color: red;}
+    20%  {color: yellow;}
+    40%  {color: blue;}
+    60% {color: purple;}
+    80% {color: grey;}
+    100% {color: skyblue;}
+  }
+
+  @media(max-width:480px){
+
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colorsh2{
+        font-size: 1rem;
+    }
+  }
